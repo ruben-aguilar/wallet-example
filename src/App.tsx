@@ -18,11 +18,11 @@ const wagmiConfig = createConfig({
 });
 const ethereumClient = new EthereumClient(wagmiConfig, chains);
 
-function App() {
+export default function App() {
   return (
     <>
       <WagmiConfig config={wagmiConfig}>
-        <HomePage />
+        <div>HOME</div>
       </WagmiConfig>
 
       <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />
